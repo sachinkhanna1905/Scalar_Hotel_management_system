@@ -1,0 +1,51 @@
+.main-navigation__menu-btn {
+  width: 3rem;
+  height: 2.8rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.main-navigation__menu-btn span {
+  display: block;
+  width: 2.7rem;
+  height: 5px;
+  background: rgb(255, 253, 253);
+}
+
+.main-navigation__title {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+}
+
+.main-navigation__title .activeLink {
+  text-decoration: none;
+  color: white;
+}
+
+.main-navigation__header-nav {
+  display: none;
+}
+
+.main-navigation__drawer-nav {
+  @apply mt-[4rem] items-start justify-start;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__menu-btn {
+    display: none;
+  }
+
+  .main-navigation__header-nav {
+    display: flex;
+    margin-left: auto;
+  }
+}

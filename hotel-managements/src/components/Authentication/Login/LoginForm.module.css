@@ -1,0 +1,9 @@
+.invalid {
+  @apply mb-[-12px];
+}
+.invalid input {
+  @apply border-solid border-2 border-red-600 shadow-none rounded-md;
+}
+.invalid label {
+  @apply text-red-600;
+}
